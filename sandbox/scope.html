@@ -1,0 +1,19 @@
+<html>
+<script>
+    x = 10;
+
+    function fun() {
+        const x = 20;
+        document.writeln(x);
+    }
+
+    fun();
+    document.writeln(x);
+
+    (() => {
+        document.writeln(x);
+    })()
+</script>
+<body>
+</body>
+</html>

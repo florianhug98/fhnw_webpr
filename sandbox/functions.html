@@ -26,9 +26,16 @@
     document.writeln(foo(1));
 
     const plus = (x) => (y) => x + y;
+    const plusFun = (x) => function(y) {return x + y};
+    function plusFunFun (x) {
+        return function(y) {return x + y}
+    }
     const plus3 = plus(3)
 
     document.writeln(plus(1)(5));
+    document.writeln(plusFun(1)(5));
+    document.writeln(plusFunFun(1)(5));
+    document.writeln(plusFunFun(1));
     document.writeln(plus3(10))
 </script>
 <body>
