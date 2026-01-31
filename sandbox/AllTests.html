@@ -7,7 +7,11 @@
 <body>
 
 <script>
-    ["lambda", "map_reduce"].forEach(name => {
+    [
+        "lambda",
+        "map_reduce",
+        "object"
+    ].forEach(name => {
        document.writeln(`<script src="${name}/${name}.js"><` + `/script>`);
        document.writeln(`<script src="${name}/${name}Test.js"><` + `/script>`);
     });
