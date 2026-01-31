@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Tests</title>
+</head>
+<body>
+
+<script>
+    ["lambda", "map_reduce"].forEach(name => {
+       document.writeln(`<script src="${name}/${name}.js"><` + `/script>`);
+       document.writeln(`<script src="${name}/${name}Test.js"><` + `/script>`);
+    });
+</script>
+
+</body>
+</html>
